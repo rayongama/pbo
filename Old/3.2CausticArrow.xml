@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathOfBuilding>
+	<Build level="1" targetVersion="3_0" banditNormal="None" bandit="Kraityn" banditMerciless="None" className="Shadow" ascendClassName="Trickster" mainSocketGroup="1" viewMode="TREE" banditCruel="None">
+		<PlayerStat stat="Str" value="144"/>
+		<PlayerStat stat="ReqStr" value="155"/>
+		<PlayerStat stat="Dex" value="263"/>
+		<PlayerStat stat="ReqDex" value="155"/>
+		<PlayerStat stat="Int" value="93"/>
+		<PlayerStat stat="ReqInt" value="155"/>
+		<PlayerStat stat="Life" value="365"/>
+		<PlayerStat stat="Spec:LifeInc" value="137"/>
+		<PlayerStat stat="LifeUnreserved" value="365"/>
+		<PlayerStat stat="LifeUnreservedPercent" value="100"/>
+		<PlayerStat stat="LifeRegen" value="412.25"/>
+		<PlayerStat stat="Mana" value="122"/>
+		<PlayerStat stat="Spec:ManaInc" value="26"/>
+		<PlayerStat stat="ManaUnreserved" value="-191"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="-156.55737704918"/>
+		<PlayerStat stat="ManaRegen" value="19.3"/>
+		<PlayerStat stat="TotalDegen" value="13.14"/>
+		<PlayerStat stat="NetLifeRegen" value="399.11"/>
+		<PlayerStat stat="EnergyShield" value="0"/>
+		<PlayerStat stat="Spec:EnergyShieldInc" value="56"/>
+		<PlayerStat stat="EnergyShieldRegen" value="0"/>
+		<PlayerStat stat="Evasion" value="7525"/>
+		<PlayerStat stat="Spec:EvasionInc" value="133"/>
+		<PlayerStat stat="MeleeEvadeChance" value="95"/>
+		<PlayerStat stat="MeleeEvadeChance" value="95"/>
+		<PlayerStat stat="ProjectileEvadeChance" value="95"/>
+		<PlayerStat stat="Armour" value="0"/>
+		<PlayerStat stat="Spec:ArmourInc" value="48"/>
+		<PlayerStat stat="PhysicalDamageReduction" value="0"/>
+		<PlayerStat stat="EffectiveMovementSpeedMod" value="1.15"/>
+		<PlayerStat stat="BlockChance" value="0"/>
+		<PlayerStat stat="SpellBlockChance" value="0"/>
+		<PlayerStat stat="AttackDodgeChance" value="3"/>
+		<PlayerStat stat="SpellDodgeChance" value="0"/>
+		<PlayerStat stat="FireResist" value="-42"/>
+		<PlayerStat stat="ColdResist" value="-42"/>
+		<PlayerStat stat="LightningResist" value="-42"/>
+		<PlayerStat stat="ChaosResist" value="-40"/>
+		<PlayerStat stat="FireResistOverCap" value="0"/>
+		<PlayerStat stat="ColdResistOverCap" value="0"/>
+		<PlayerStat stat="LightningResistOverCap" value="0"/>
+		<PlayerStat stat="ChaosResistOverCap" value="0"/>
+	</Build>
+	<Calcs>
+		<Input name="skill_number" number="1"/>
+		<Input name="misc_buffMode" string="EFFECTIVE"/>
+		<Section collapsed="false" id="SkillSelect"/>
+		<Section collapsed="false" id="HitDamage"/>
+		<Section collapsed="false" id="Dot"/>
+		<Section collapsed="false" id="Speed"/>
+		<Section collapsed="false" id="Crit"/>
+		<Section collapsed="false" id="HitChance"/>
+		<Section collapsed="false" id="SkillTypeStats"/>
+		<Section collapsed="false" id="Bleed"/>
+		<Section collapsed="false" id="Poison"/>
+		<Section collapsed="false" id="Ignite"/>
+		<Section collapsed="false" id="Decay"/>
+		<Section collapsed="false" id="LeechGain"/>
+		<Section collapsed="false" id="MiscEffects"/>
+		<Section collapsed="false" id="Attributes"/>
+		<Section collapsed="false" id="Life"/>
+		<Section collapsed="false" id="Mana"/>
+		<Section collapsed="false" id="EnergyShield"/>
+		<Section collapsed="false" id="Armour"/>
+		<Section collapsed="false" id="Evasion"/>
+		<Section collapsed="false" id="Resist"/>
+		<Section collapsed="false" id="DamageTaken"/>
+		<Section collapsed="false" id="MiscDefences"/>
+	</Calcs>
+	<Skills defaultGemQuality="nil" defaultGemLevel="nil" sortGemsByDPS="true">
+		<Skill mainActiveSkillCalcs="1" label="Primary" enabled="true" mainActiveSkill="1">
+			<Gem level="20" skillId="PoisonArrow" quality="0" enabled="true" nameSpec="Caustic Arrow"/>
+			<Gem level="20" skillId="SupportVoidManipulation" quality="0" enabled="true" nameSpec="Void Manipulation"/>
+			<Gem level="20" skillId="SupportConcentratedEffect" skillPart="1" quality="0" enabled="true" nameSpec="Concentrated Effect" skillMinion="SummonedChaosGolem"/>
+			<Gem level="20" skillId="SupportRapidDecay" quality="0" enabled="true" nameSpec="Swift Affliction"/>
+			<Gem level="3" skillId="SupportAdditionalLevel" quality="0" enabled="true" nameSpec="Empower"/>
+			<Gem level="20" skillId="SupportItemRarity" quality="0" enabled="true" nameSpec="Item Rarity"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="Curse" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="Frenzy" skillPart="1" quality="0" enabled="true" nameSpec="Frenzy" skillMinion="SummonedPhantasm"/>
+			<Gem level="20" skillId="SupportGreaterMultipleProjectiles" skillPart="1" quality="0" enabled="true" nameSpec="Greater Multiple Projectiles" skillMinion="SummonedChaosGolem"/>
+			<Gem level="20" skillId="SupportCurseOnHit" quality="0" enabled="true" nameSpec="Curse On Hit"/>
+			<Gem level="20" skillId="Despair" quality="0" enabled="true" nameSpec="Despair"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="Boosting 1" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="Wither" skillPart="1" quality="0" enabled="true" nameSpec="Wither"/>
+			<Gem level="20" skillId="SupportSpellTotem" quality="0" enabled="true" nameSpec="Spell Totem"/>
+			<Gem level="20" skillId="SupportFasterCast" skillPart="1" quality="0" enabled="true" nameSpec="Faster Casting" skillMinion="SummonedChaosGolem"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="Boosting 2" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="BloodRage" skillPart="1" quality="0" enabled="true" nameSpec="Blood Rage" skillMinion="SummonedPhantasm"/>
+			<Gem level="20" skillId="VaalLightningTrap" skillPart="1" quality="0" enabled="true" nameSpec="Vaal Lightning Trap" skillMinion="SummonedPhantasm"/>
+			<Gem level="20" skillId="SupportIncreasedDuration" skillPart="1" quality="0" enabled="true" nameSpec="Increased Duration" skillMinion="SummonedChaosGolem"/>
+			<Gem level="20" skillId="EnduringCry" quality="0" enabled="true" nameSpec="Enduring Cry"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="Auras" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="Grace" quality="0" enabled="true" nameSpec="Grace"/>
+			<Gem level="20" skillId="Clarity" quality="0" enabled="true" nameSpec="Clarity"/>
+			<Gem level="3" skillId="SupportAdditionalXP" quality="0" enabled="true" nameSpec="Enlighten"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="Others" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="SummonFireGolem" skillMinionSkill="1" skillPart="1" skillMinionSkillCalcs="1" quality="0" enabled="true" nameSpec="Summon Flame Golem" skillMinion="SummonedFlameGolem"/>
+			<Gem level="20" skillId="BlinkArrow" quality="0" enabled="true" nameSpec="Blink Arrow"/>
+			<Gem level="1" skillId="Portal" quality="0" enabled="true" nameSpec="Portal"/>
+		</Skill>
+	</Skills>
+	<Tree activeSpec="1">
+		<Spec>
+			<URL>
+				https://www.pathofexile.com/passive-skill-tree/AAAABAYCAH11Kk2i2XWe-aTIFIngzZjEorXyt7ajo_6PBS12guOEy71VhSaVQzFh4kd-62NKyDOjvTaExdo7_roZivajWhqRR4Czaoz-ChNtH0FlTQ5IES91yyaIAx6Hy7VItzDmgUkTzxXxisM6vqf1b7vjjX6VLhQJj_oVIAguBx7velxAGbTmWM_dsNibtS5TD6stgyzpqJrTfu2D2L0AXha_Nj01kqXLJIu00RGW2sHqYnTtWlJw1D8ne8NuqhmOkx8byIaz02-XBsMzSVHw1Ty2yAwA7vJFhNmnm3rv
+			</URL>
+			<Sockets>
+				<Socket nodeId="7960" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
+				<Socket nodeId="26196" itemId="0"/>
+				<Socket nodeId="36634" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="21984" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
+				<Socket nodeId="61419" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="55190" itemId="0"/>
+				<Socket nodeId="48768" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="33631" itemId="0"/>
+				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="32763" itemId="0"/>
+			</Sockets>
+		</Spec>
+	</Tree>
+	<Notes>
+		
+	</Notes>
+	<TreeView searchStr="" zoomY="143.65241358025" showHeatMap="false" zoomLevel="6" showStatDifferences="true" zoomX="-991.95678395061"/>
+	<Items activeItemSet="1" useSecondWeaponSet="false">
+		<ItemSet useSecondWeaponSet="false" id="1">
+			<Slot name="Gloves" itemId="0"/>
+			<Slot name="Weapon 1" itemId="0"/>
+			<Slot name="Flask 1" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 3" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 2" itemId="0"/>
+			<Slot name="Amulet" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 1" itemId="0"/>
+			<Slot name="Flask 2" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 2" itemId="0"/>
+			<Slot name="Weapon 2" itemId="0"/>
+			<Slot name="Body Armour" itemId="0"/>
+			<Slot name="Belt" itemId="0"/>
+			<Slot name="Flask 5" itemId="0"/>
+			<Slot name="Ring 2" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 2" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 4" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 1" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 1" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 1" itemId="0"/>
+			<Slot name="Weapon 1 Swap" itemId="0"/>
+			<Slot name="Boots" itemId="0"/>
+			<Slot name="Ring 1" itemId="0"/>
+			<Slot name="Weapon 2 Swap" itemId="0"/>
+			<Slot name="Helmet" itemId="0"/>
+			<Slot name="Boots Abyssal Socket 1" itemId="0"/>
+		</ItemSet>
+	</Items>
+	<Config/>
+</PathOfBuilding>

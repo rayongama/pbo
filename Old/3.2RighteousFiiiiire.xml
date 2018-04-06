@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathOfBuilding>
+	<Build level="100" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Templar" ascendClassName="Guardian" mainSocketGroup="2" viewMode="TREE" banditCruel="None">
+		<PlayerStat stat="AverageHit" value="0"/>
+		<PlayerStat stat="AverageDamage" value="0"/>
+		<PlayerStat stat="Speed" value="1.16"/>
+		<PlayerStat stat="Speed" value="1.16"/>
+		<PlayerStat stat="PreEffectiveCritChance" value="0"/>
+		<PlayerStat stat="CritChance" value="0"/>
+		<PlayerStat stat="CritMultiplier" value="1"/>
+		<PlayerStat stat="HitChance" value="100"/>
+		<PlayerStat stat="TotalDPS" value="0"/>
+		<PlayerStat stat="TotalDot" value="102336.9634224"/>
+		<PlayerStat stat="WithPoisonDPS" value="102336.9634224"/>
+		<PlayerStat stat="AreaOfEffectRadius" value="28"/>
+		<PlayerStat stat="ManaCost" value="0"/>
+		<PlayerStat stat="Str" value="156"/>
+		<PlayerStat stat="ReqStr" value="111"/>
+		<PlayerStat stat="Dex" value="77"/>
+		<PlayerStat stat="ReqDex" value="0"/>
+		<PlayerStat stat="Int" value="396"/>
+		<PlayerStat stat="ReqInt" value="180"/>
+		<PlayerStat stat="Life" value="1543"/>
+		<PlayerStat stat="Spec:LifeInc" value="45"/>
+		<PlayerStat stat="LifeUnreserved" value="740"/>
+		<PlayerStat stat="LifeUnreservedPercent" value="47.958522359041"/>
+		<PlayerStat stat="LifeRegen" value="0"/>
+		<PlayerStat stat="LifeLeechGainRate" value="0"/>
+		<PlayerStat stat="Mana" value="895"/>
+		<PlayerStat stat="Spec:ManaInc" value="5"/>
+		<PlayerStat stat="ManaUnreserved" value="313"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="34.972067039106"/>
+		<PlayerStat stat="ManaRegen" value="32.1"/>
+		<PlayerStat stat="ManaLeechGainRate" value="0"/>
+		<PlayerStat stat="TotalDegen" value="1259.836"/>
+		<PlayerStat stat="NetLifeRegen" value="-503.4192"/>
+		<PlayerStat stat="EnergyShield" value="8603"/>
+		<PlayerStat stat="Spec:EnergyShieldInc" value="272"/>
+		<PlayerStat stat="EnergyShieldRegen" value="756.4168"/>
+		<PlayerStat stat="EnergyShieldLeechGainRate" value="0"/>
+		<PlayerStat stat="Evasion" value="494"/>
+		<PlayerStat stat="Spec:EvasionInc" value="25"/>
+		<PlayerStat stat="MeleeEvadeChance" value="6"/>
+		<PlayerStat stat="MeleeEvadeChance" value="6"/>
+		<PlayerStat stat="ProjectileEvadeChance" value="6"/>
+		<PlayerStat stat="Armour" value="3030"/>
+		<PlayerStat stat="Spec:ArmourInc" value="136"/>
+		<PlayerStat stat="PhysicalDamageReduction" value="22"/>
+		<PlayerStat stat="EffectiveMovementSpeedMod" value="0.94"/>
+		<PlayerStat stat="BlockChance" value="35"/>
+		<PlayerStat stat="SpellBlockChance" value="16"/>
+		<PlayerStat stat="AttackDodgeChance" value="0"/>
+		<PlayerStat stat="SpellDodgeChance" value="0"/>
+		<PlayerStat stat="FireResist" value="83"/>
+		<PlayerStat stat="ColdResist" value="49"/>
+		<PlayerStat stat="LightningResist" value="36"/>
+		<PlayerStat stat="ChaosResist" value="0"/>
+		<PlayerStat stat="FireResistOverCap" value="83"/>
+		<PlayerStat stat="ColdResistOverCap" value="0"/>
+		<PlayerStat stat="LightningResistOverCap" value="0"/>
+		<PlayerStat stat="ChaosResistOverCap" value="0"/>
+		<PlayerStat stat="PowerCharges" value="0"/>
+		<PlayerStat stat="PowerChargesMax" value="3"/>
+		<PlayerStat stat="FrenzyCharges" value="0"/>
+		<PlayerStat stat="FrenzyChargesMax" value="3"/>
+		<PlayerStat stat="EnduranceCharges" value="0"/>
+		<PlayerStat stat="EnduranceChargesMax" value="3"/>
+	</Build>
+	<Calcs>
+		<Input name="skill_number" number="1"/>
+		<Input name="misc_buffMode" string="EFFECTIVE"/>
+		<Section collapsed="nil" id="SkillSelect"/>
+		<Section collapsed="nil" id="HitDamage"/>
+		<Section collapsed="nil" id="Dot"/>
+		<Section collapsed="nil" id="Speed"/>
+		<Section collapsed="nil" id="Crit"/>
+		<Section collapsed="nil" id="HitChance"/>
+		<Section collapsed="nil" id="SkillTypeStats"/>
+		<Section collapsed="nil" id="Bleed"/>
+		<Section collapsed="nil" id="Poison"/>
+		<Section collapsed="nil" id="Ignite"/>
+		<Section collapsed="nil" id="Decay"/>
+		<Section collapsed="nil" id="LeechGain"/>
+		<Section collapsed="nil" id="MiscEffects"/>
+		<Section collapsed="nil" id="Attributes"/>
+		<Section collapsed="nil" id="Life"/>
+		<Section collapsed="nil" id="Mana"/>
+		<Section collapsed="nil" id="EnergyShield"/>
+		<Section collapsed="nil" id="Armour"/>
+		<Section collapsed="nil" id="Evasion"/>
+		<Section collapsed="nil" id="Resist"/>
+		<Section collapsed="nil" id="DamageTaken"/>
+		<Section collapsed="nil" id="MiscDefences"/>
+	</Calcs>
+	<Skills defaultGemQuality="nil" defaultGemLevel="nil" sortGemsByDPS="true">
+		<Skill source="Item:1:Balefire, Opal Sceptre" mainActiveSkillCalcs="1" label="" enabled="true" slot="Weapon 1" mainActiveSkill="1">
+			<Gem level="25" skillId="FireBeam" skillPart="1" quality="0" skillPartCalcs="1" enabled="true" nameSpec="Scorching Ray"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" mainActiveSkill="1">
+			<Gem level="20" skillId="RighteousFire" quality="0" enabled="true" nameSpec="Righteous Fire"/>
+			<Gem level="20" skillId="SupportIncreasedBurningDamage" skillPart="1" quality="0" enabled="true" nameSpec="Burning Damage"/>
+			<Gem level="20" skillId="SupportIncreasedAreaOfEffect" quality="0" enabled="true" nameSpec="Increased Area of Effect"/>
+			<Gem level="20" skillId="SupportEfficacy" quality="0" enabled="true" nameSpec="Efficacy"/>
+			<Gem level="20" skillId="SupportElementalFocus" quality="0" enabled="true" nameSpec="Elemental Focus"/>
+			<Gem level="20" skillId="SupportItemQuantity" quality="0" enabled="true" nameSpec="Item Quantity"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="Discipline" quality="0" enabled="true" nameSpec="Discipline"/>
+			<Gem level="3" skillId="SupportAdditionalLevel" quality="0" enabled="true" nameSpec="Empower"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" slot="Ring 1" mainActiveSkill="nil">
+			<Gem level="20" skillId="FireResistAura" quality="0" enabled="true" nameSpec="Purity of Fire"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="nil" label="" enabled="true" mainActiveSkill="nil">
+			<Gem level="20" skillId="SupportBloodMagic" skillPart="1" quality="0" enabled="true" nameSpec="Blood Magic"/>
+			<Gem level="20" skillId="SupportBlasphemy" skillPart="1" quality="0" enabled="true" nameSpec="Blasphemy"/>
+			<Gem level="20" skillId="Flammability" quality="0" enabled="true" nameSpec="Flammability"/>
+			<Gem level="3" skillId="SupportAdditionalXP" quality="0" enabled="true" nameSpec="Enlighten"/>
+		</Skill>
+	</Skills>
+	<Tree activeSpec="1">
+		<Spec>
+			<URL>
+				https://www.pathofexile.com/passive-skill-tree/AAAABAUDABzc2WGboX31HRRwu0GHTwSSK48aAW_fivnoBg4YaqcIgOAXL6crN2bBxabrgKTGrhEvtz4i9CsKHKdd8oLHJog8LehatzAOSKEvSVEbJcQV8NWVLlOlC2Evb1ZIpRgRlkuuHU_XajW5EVBOUukCtAzK00Nj7Bg3g9gkbAu-imh02RMHHn_GQ8jqulfJGFZxTW0ZLKbPfiftNAoNfFxrg18MX2Tnms9-bI9G1HxV1vrSCfYXHBkuaPLDbTlSuJP3wcT2r2yESJswEmnaYjbF2VutjYPMKPri94t6_QBYB3F56-6TJw==
+			</URL>
+			<Sockets>
+				<Socket nodeId="7960" itemId="0"/>
+				<Socket nodeId="32763" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
+				<Socket nodeId="26196" itemId="0"/>
+				<Socket nodeId="36634" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="21984" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
+				<Socket nodeId="61419" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="55190" itemId="0"/>
+				<Socket nodeId="48768" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="61834" itemId="0"/>
+				<Socket nodeId="41263" itemId="0"/>
+				<Socket nodeId="33631" itemId="0"/>
+				<Socket nodeId="33989" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+			</Sockets>
+		</Spec>
+	</Tree>
+	<Notes>
+		
+	</Notes>
+	<TreeView searchStr="" zoomY="-101.52693355624" showHeatMap="nil" zoomLevel="5" showStatDifferences="true" zoomX="372.92285273777"/>
+	<Items activeItemSet="1" useSecondWeaponSet="nil">
+		<Item id="1">
+			Rarity: Unique
+Balefire
+Opal Sceptre
+Requires Level 60
+40% increased Elemental Damage
+Grants Level 25 Scorching Ray Skill
+(12-20)% increased Cast Speed 
+Recover (1-3)% of Maximum Life on Kill 
+Recover (1-3)% of Maximum Mana on Kill
+10% increased Scorching Ray beam length
+			<ModRange range="0.5" id="3"/>
+		</Item>
+		<Item variant="3" id="2">
+			Rarity: Unique
+Shavronne&apos;s Wrappings
+Occultist&apos;s Vestment
+Variant: Pre 1.0.0
+Variant: {2_6}Pre 3.0.0
+Variant: Current
+Requires Level 62, 180 Int
+(3-10)% increased Spell Damage
+{variant:1}(200-250)% increased Energy Shield
+{variant:2}(140-200)% increased Energy Shield
+{variant:3}(100-150)% increased Energy Shield
+10% faster start of Energy Shield Recharge
++(30-40)% to Lightning Resistance
+Reflects 1 to 250 Lightning Damage to Melee Attackers
+Chaos Damage does not bypass Energy Shield
+			<ModRange range="0.5" id="1"/>
+			<ModRange range="0.5" id="2"/>
+			<ModRange range="0.5" id="3"/>
+			<ModRange range="0.5" id="4"/>
+			<ModRange range="0.5" id="6"/>
+		</Item>
+		<Item id="3">
+			Rarity: RARE
+New Item
+Hubris Circlet
+Crafted: true
+Prefix: {range:1}LocalIncreasedEnergyShield8
+Prefix: {range:1}LocalIncreasedEnergyShieldPercent7_
+Prefix: {range:1}LocalIncreasedEnergyShieldPercentAndStunRecovery6
+Suffix: {range:1}Intelligence10
+Suffix: {range:1}LifeRegeneration7
+Suffix: {range:1}FireResist8
+Quality: 20
+Sockets: B-B-B-B
+LevelReq: 69
+Implicits: 0
++60 to Intelligence
++61 to maximum Energy Shield
+142% increased Energy Shield
+20 Life Regenerated per second
++48% to Fire Resistance
+17% increased Stun and Block Recovery
+		</Item>
+		<Item id="4">
+			Rarity: RARE
+New Item
+Titanium Spirit Shield
+Crafted: true
+Prefix: {range:1}FireDamagePrefixOnWeapon8_
+Prefix: {range:1}LocalIncreasedEnergyShield10
+Prefix: {range:1}LocalIncreasedEnergyShieldPercent8
+Suffix: {range:1}AdditionalBlockChance3
+Suffix: {range:1}SpellBlockPercentage2
+Suffix: {range:1}AllResistances6
+Quality: 20
+Sockets: B-B-B
+LevelReq: 68
+Implicits: 0
+79% increased Fire Damage
++90 to maximum Energy Shield
+110% increased Energy Shield
++18% to all Elemental Resistances
++8% Chance to Block
+6% Chance to Block Spells
+		</Item>
+		<Item id="5">
+			Rarity: RARE
+New Item
+Unset Ring
+Crafted: true
+Prefix: {range:1}LocalIncreaseSocketedGemUnsetRing3
+Prefix: {range:1}IncreasedEnergyShield11
+Prefix: None
+Suffix: {range:1}FireDamagePercent4
+Suffix: {range:1}AllResistances5
+Suffix: {range:0.972}FireResist8
+Quality: 0
+Sockets: G
+LevelReq: 67
+Implicits: 1
+Has 1 Socket
++3 to Level of Socketed Gems
+22% increased Fire Damage
++47 to maximum Energy Shield
++16% to all Elemental Resistances
++48% to Fire Resistance
+		</Item>
+		<Item id="6">
+			Rarity: Unique
+Presence of Chayula
+Onyx Amulet
+League: Breach
+Requires Level 60
++(10-16) to all Attributes
+30% increased Rarity of Items found
++60% to Chaos Resistance
+Cannot be Stunned
+20% of Maximum Life Converted to Energy Shield
+			<ModRange range="0.5" id="1"/>
+		</Item>
+		<Item id="7">
+			Rarity: RARE
+New Item
+Moonstone Ring
+Crafted: true
+Prefix: {range:1}IncreasedEnergyShield11
+Prefix: None
+Prefix: None
+Suffix: {range:1}FireDamagePercent4
+Suffix: {range:1}AllResistances5
+Suffix: {range:1}ColdResist8
+Quality: 0
+LevelReq: 67
+Implicits: 1
+{range:1}+(15-25) to maximum Energy Shield
+22% increased Fire Damage
++47 to maximum Energy Shield
++16% to all Elemental Resistances
++48% to Cold Resistance
+			<ModRange range="1" id="1"/>
+		</Item>
+		<Slot name="Weapon 1" itemId="1"/>
+		<Slot name="Amulet" itemId="6"/>
+		<Slot name="Weapon 2" itemId="4"/>
+		<Slot name="Body Armour" itemId="2"/>
+		<Slot name="Ring 2" itemId="7"/>
+		<Slot name="Ring 1" itemId="5"/>
+		<Slot name="Helmet" itemId="3"/>
+		<ItemSet useSecondWeaponSet="nil" id="1">
+			<Slot name="Gloves" itemId="0"/>
+			<Slot name="Weapon 1" itemId="1"/>
+			<Slot name="Flask 1" itemId="0"/>
+			<Slot name="Belt Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 3" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 2" itemId="0"/>
+			<Slot name="Amulet" itemId="6"/>
+			<Slot name="Belt Abyssal Socket 1" itemId="0"/>
+			<Slot name="Flask 2" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 2" itemId="0"/>
+			<Slot name="Weapon 2" itemId="4"/>
+			<Slot name="Body Armour" itemId="2"/>
+			<Slot name="Belt" itemId="0"/>
+			<Slot name="Flask 5" itemId="0"/>
+			<Slot name="Ring 2" itemId="7"/>
+			<Slot name="Boots Abyssal Socket 2" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 2" itemId="0"/>
+			<Slot name="Flask 4" itemId="0"/>
+			<Slot name="Gloves Abyssal Socket 1" itemId="0"/>
+			<Slot name="Helmet Abyssal Socket 1" itemId="0"/>
+			<Slot name="Body Armour Abyssal Socket 1" itemId="0"/>
+			<Slot name="Weapon 1 Swap" itemId="0"/>
+			<Slot name="Boots" itemId="0"/>
+			<Slot name="Ring 1" itemId="5"/>
+			<Slot name="Weapon 2 Swap" itemId="0"/>
+			<Slot name="Helmet" itemId="3"/>
+			<Slot name="Boots Abyssal Socket 1" itemId="0"/>
+		</ItemSet>
+	</Items>
+	<Config/>
+</PathOfBuilding>
